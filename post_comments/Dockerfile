@@ -9,6 +9,6 @@ RUN apt update && \
     pip3 install --upgrade pip && \
     pip3 install -r requirements.txt
 
-COPY review.py /review.py
+COPY post_comments.py /post_comments.py
 
-ENTRYPOINT ["/review.py"]
+ENTRYPOINT ["/post_comments.py"]
