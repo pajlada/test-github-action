@@ -28,14 +28,5 @@ from typing import List
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Create a review from clang-tidy warnings"
-    )
-    parser.add_argument("--token", help="github auth token")
-
-    args = parser.parse_args()
-
     with open('clang_tidy_review.yaml', 'w') as f:
         f.write('foobar')
-
-    github = Github(args.token)
